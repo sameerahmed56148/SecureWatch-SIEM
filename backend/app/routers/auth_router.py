@@ -55,6 +55,9 @@ def login(
 
     if not verify_password(form_data.password, db_user.password):
         raise HTTPException(status_code=401, detail="Invalid credentials")
+    
+    print("Email:", db_user.email)
+    print("Role:", db_user.role)
 
     token = create_access_token(
         {

@@ -1,0 +1,167 @@
+.user-management-page {
+  min-height: 100vh;
+  background: #071421;
+  color: #ffffff;
+}
+
+.user-management-content {
+  padding: 32px;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.user-management-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.user-management-title h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 26px;
+}
+
+.user-management-title p {
+  margin: 8px 0 0;
+  color: #8297ad;
+  font-size: 14px;
+}
+
+.refresh-button {
+  padding: 10px 17px;
+  border: 1px solid #355879;
+  border-radius: 8px;
+  background: #0c1c2d;
+  color: #d8e6f3;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.refresh-button:hover {
+  background: #142b43;
+}
+
+.user-management-table-container {
+  overflow-x: auto;
+  border: 1px solid #263e58;
+  border-radius: 13px;
+  background: #0c1c2d;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+.user-management-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.user-management-table th {
+  padding: 16px;
+  text-align: left;
+  color: #8297ad;
+  background: #0a1929;
+  border-bottom: 1px solid #263e58;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.user-management-table td {
+  padding: 16px;
+  border-bottom: 1px solid #1c344c;
+  color: #d8e6f3;
+  font-size: 13px;
+}
+
+.user-management-table tbody tr:hover {
+  background: #102438;
+}
+
+.user-management-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.user-management-table select {
+  padding: 7px 10px;
+  border: 1px solid #355879;
+  border-radius: 6px;
+  background: #102438;
+  color: #d8e6f3;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.user-management-table select:focus {
+  outline: none;
+  border-color: #5da9ee;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.role-admin {
+  background: #3d273f;
+  color: #d98cff;
+}
+
+.role-analyst {
+  background: #163b5c;
+  color: #65b7ff;
+}
+
+.role-viewer {
+  background: #18392b;
+  color: #57d994;
+}
+
+.user-management-message {
+  padding: 40px;
+  text-align: center;
+  color: #8297ad;
+  border: 1px solid #263e58;
+  border-radius: 13px;
+  background: #0c1c2d;
+}
+
+.user-management-error {
+  padding: 15px 18px;
+  margin-bottom: 20px;
+  border: 1px solid #71333d;
+  border-radius: 8px;
+  background: #351b21;
+  color: #ff8994;
+}
+
+.no-users {
+  padding: 45px !important;
+  text-align: center;
+  color: #8297ad !important;
+}
+
+.user-management-footer {
+  margin-top: 15px;
+  color: #8297ad;
+  font-size: 13px;
+}
+
+@media (max-width: 800px) {
+  .user-management-content {
+    padding: 20px 15px;
+  }
+
+  .user-management-title {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .user-management-title h2 {
+    font-size: 22px;
+  }
+}
